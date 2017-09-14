@@ -25,8 +25,20 @@ public class PaparazziTest {
     }
 
     @Test
+    public void testTakeScreenShotWithBounds() {
+        Paparazzi.takeScreenShot(application, 1, 1, 1, 1);
+        verify(application, times(1)).draw((Graphics) any());
+    }
+
+    @Test
     public void testTakeScreenShotWithTransparency() {
         Paparazzi.takeScreenShotWithTransparency(application);
+        verify(application, times(1)).draw((Graphics) any());
+    }
+
+    @Test
+    public void testTakeScreenShotWithTransparencyWithBounds() {
+        Paparazzi.takeScreenShotWithTransparency(application, 1, 1, 1, 1);
         verify(application, times(1)).draw((Graphics) any());
     }
 }
