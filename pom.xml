@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.harium.etyl</groupId>
     <artifactId>paparazzi</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>jar</packaging>
     <name>Etyl Paparazzi</name>
     <description>A simple tool to take screenshots of Etyl Applications</description>
